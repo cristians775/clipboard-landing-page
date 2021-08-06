@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Bai Jamjuree";
+  color: var(--grayish-blue);
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+}
+
+.main-container {
+  background-color: white;
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 35% 1fr;
+  grid-template-areas:
+    "main-header main-header main-header"
+    ". main-center ."
+   ;
+
+}
+
+.main-content-header {
+  grid-area: main-header;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: url("../images/bg-header-desktop.png");
+  border: none;
+  box-shadow: 0 -30px 200px rgb(255, 255, 255) inset;
+}
+
+.main-content-center {
+  grid-area: main-center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-content-center__title {
+  margin: 0;
+}
+
+.main-content-center__wrapper-button {
+  width: 100%;
+  height:30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-content-center__description {
+  width: 40%;
+}
+
+.btn {
+  border: none;
+  width: 17em;
+  height: 3.5rem;
+  margin: 10px;
+  border-radius: 30px;
+  position: relative;
+  letter-spacing: 1px;
+}
+.primary {
+  background-color: var(--strong-cyan);
+  color: white;
+}
+.btn::after {
+  content: "";
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  width: 17em;
+  height: 3.5rem;
+  box-shadow: 10px;
+}
+.primary::after {
+  border-bottom: 3px solid hsl(171, 56%, 35%);
+  box-shadow: 0px 10px 30px 0.1px hsla(171, 66%, 44%, 0.269);
+}
+.secondary {
+  background-color: var(--light-blue);
+  color: white;
+}
+.secondary::after {
+  border-bottom: 3px solid hsl(233, 51%, 38%);
+  box-shadow: 0px 10px 30px 0.1px hsla(233, 51%, 38%, 0.269);
+}
