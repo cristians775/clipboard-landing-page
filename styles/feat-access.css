@@ -2,12 +2,14 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 1fr 1fr;
+    position: relative;
+    grid-template-columns: auto-fit auto-fit;
+    grid-template-rows: 20% auto-fit;
     grid-template-areas:
-     ". ."
+   
      "feat-access-top feat-access-top"
      "hero hero";
+
 }
 
 .clipboard-feat-access__top{
@@ -30,7 +32,12 @@
     grid-area: hero;
     display:flex;
     justify-content: center;
-    align-items:flex-end ;
 
+
+}
+
+.clipboard-feat-access__hero>img{
+    max-width: 100%;
+  max-height: auto;
 }
 

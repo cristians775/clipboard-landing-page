@@ -3,10 +3,11 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30% 1fr;
+  grid-template-rows: auto-fit 1fr;
   grid-template-areas:
     "feat-top feat-top"
     "hero content";
+  
 }
 
 .clipboard-feat-top {
@@ -33,12 +34,18 @@
   grid-area: hero;
   position: relative;
 
+  display:flex;
+  align-items: flex-end;
+
+ 
 }
 
 .clipboard-feat__hero > img {
  position: absolute;
+ align-self: center;
+ justify-self: center;
   width: 100%;
-  height: auto;
+  max-height: 100%;
   left: -10%;
 }
 .clipboard-feat__content {
@@ -46,8 +53,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 
 }
 .clipboard-feat__content__item {
   width: 40%;
+  margin-left: 5%;
 }

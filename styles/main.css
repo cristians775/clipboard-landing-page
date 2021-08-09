@@ -34,12 +34,13 @@ h2 {
   width: 100vw;
   height: 80vh;
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: 10% auto-fit 10%;
   grid-template-rows: 35% 1fr;
   grid-template-areas:
     "main-header main-header main-header"
     ". main-center ."
    ;
+   
 
 }
 
