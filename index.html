@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/main.css" />
   <link href='./styles/feat.css' rel='stylesheet' type='text/css'>
+  <link href='./styles/feat-access.css' rel='stylesheet' type='text/css'>
   <link href='https://fonts.google.com/specimen/Bai+Jamjuree' rel='stylesheet' type='text/css'>
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
@@ -13,8 +14,9 @@
 <body>
   <div class="main-container">
     <div class="main-content-header">
-      <object data="./images/logo.svg">
-      </object />
+      <div>
+        <object class="main__logo" data="./images/logo.svg"></object>
+      </div>
     </div>
     <div class="main-content-center">
       <h1 class="main-content-center__title">A history of everything you copy</h1>
@@ -30,6 +32,9 @@
       </div>
     </div>
   </div>
+
+
+
   <div class="clipboard-feat-container">
     <div class="clipboard-feat-top">
       <h2 class="clipboard-feat-top__title">Keep track of your snippets</h2>
@@ -58,25 +63,33 @@
         <p>Retrieve any snippets from the first moment you started using the app.</p>
       </div>
     </div>
-
   </div>
 
 
 
-
- <!--  <div>
-    <div class="clipboard-feat-bottom">
-      <h1>
+  <div class="clipboard-feat-access-container">
+    <div class="clipboard-feat-access__top">
+      <h1 class=clipboard-feat-access__top__title>
         Access ClipBoard anywhere
       </h1>
-      <div class="clipboard-feat__description">
+      <div class="clipboard-feat-access__description">
         <p>
           Whether you´re on the go, or at your computer, you can access all your Clipboard snippets in a few simple
           clicks.
         </p>
       </div>
     </div>
-  </div> -->
+    <div class="clipboard-feat-access__hero">
+        
+      <img src="./images/image-devices.png" alt="devices">
+    </div>
+   
+  </div>
+  
+
+
+  <!--  <div>
+     -->
 </body>
 
 </html>
