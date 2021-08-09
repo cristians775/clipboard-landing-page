@@ -1,0 +1,36 @@
+.clipboard-feat-access-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr 1fr;
+    grid-template-areas:
+     ". ."
+     "feat-access-top feat-access-top"
+     "hero hero";
+}
+
+.clipboard-feat-access__top{
+        grid-area: feat-access-top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+}
+.clipboard-feat-access__top__title{
+    margin-bottom: 0;
+
+}
+.clipboard-feat-access__description{
+    width: 45%;
+    text-align: center;
+}
+.clipboard-feat-access__hero{
+    grid-area: hero;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end ;
+
+}
+
