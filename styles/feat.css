@@ -1,13 +1,12 @@
 .clipboard-feat-container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto-fit 1fr;
   grid-template-areas:
     "feat-top feat-top"
     "hero content";
-  
 }
 
 .clipboard-feat-top {
@@ -34,29 +33,61 @@
   grid-area: hero;
   position: relative;
 
-  display:flex;
+  display: flex;
   align-items: flex-end;
-
- 
 }
 
 .clipboard-feat__hero > img {
- position: absolute;
- align-self: center;
- justify-self: center;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
   width: 100%;
   max-height: 100%;
   left: -10%;
 }
+
 .clipboard-feat__content {
   grid-area: content;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-
 }
 .clipboard-feat__content__item {
   width: 40%;
   margin-left: 5%;
+}
+@media screen and (min-width: 375px) {
+  .clipboard-feat-container {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 20% auto-fill;
+    grid-template-areas:
+      "feat-top"
+      "hero"
+      "content";
+  }
+
+  .clipboard-feat-top__title {
+    margin: 0;
+    width: 80%;
+  }
+  .clipboard-feat-top__description {
+    width: 90%;
+  }
+  .clipboard-feat__hero {
+    justify-content: center;
+  }
+  .clipboard-feat__hero > img {
+    position: relative;
+    width: 90%;
+    left: 0;
+  }
+  .clipboard-feat__content {
+    align-items: center;
+    text-align: center;
+  }
+  .clipboard-feat__content__item {
+    width: 90%;
+    margin-left: 5%;
+  }
 }

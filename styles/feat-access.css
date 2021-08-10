@@ -1,43 +1,43 @@
-.clipboard-feat-access-container{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    position: relative;
-    grid-template-columns: auto-fit auto-fit;
-    grid-template-rows: 20% auto-fit;
-    grid-template-areas:
-   
-     "feat-access-top feat-access-top"
-     "hero hero";
-
+.clipboard-feat-access-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  position: relative;
+  grid-template-columns: auto-fit auto-fit;
+  grid-template-rows: 20% auto-fit;
+  grid-template-areas:
+    "feat-access-top feat-access-top"
+    "hero hero";
 }
 
-.clipboard-feat-access__top{
-        grid-area: feat-access-top;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
+.clipboard-feat-access__top {
+  grid-area: feat-access-top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.clipboard-feat-access__top__title{
-    margin-bottom: 0;
-
+.clipboard-feat-access__top__title {
+  margin-bottom: 0;
 }
-.clipboard-feat-access__description{
-    width: 45%;
-    text-align: center;
+.clipboard-feat-access__description {
+  width: 45%;
+  text-align: center;
 }
-.clipboard-feat-access__hero{
-    grid-area: hero;
-    display:flex;
-    justify-content: center;
-
-
+.clipboard-feat-access__hero {
+  grid-area: hero;
+  display: flex;
+  justify-content: center;
 }
 
-.clipboard-feat-access__hero>img{
-    max-width: 100%;
+.clipboard-feat-access__hero > img {
+  max-width: 100%;
   max-height: auto;
 }
 
+@media screen and (min-width: 375px) {
+  .clipboard-feat-access__description {
+    width: 90%;
+  }
+}

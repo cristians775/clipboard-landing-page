@@ -38,10 +38,7 @@ h2 {
   grid-template-rows: 35% 1fr;
   grid-template-areas:
     "main-header main-header main-header"
-    ". main-center ."
-   ;
-   
-
+    ". main-center .";
 }
 
 .main-content-header {
@@ -53,7 +50,6 @@ h2 {
   border: none;
   box-shadow: 0px -20px 20px 10px rgb(255, 255, 255) inset;
 }
-
 
 .main-content-center {
   grid-area: main-center;
@@ -69,11 +65,11 @@ h2 {
 
 .main-content-center__wrapper-button {
   width: 100%;
-  height:30%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
 }
 
 .main-content-center__description {
@@ -116,4 +112,32 @@ h2 {
 .secondary::after {
   border-bottom: 3px solid hsl(233, 51%, 38%);
   box-shadow: 0px 10px 30px 0.1px hsla(233, 51%, 38%, 0.269);
+}
+
+@media screen and (min-width: 375px) {
+  .main-content-center__description {
+    width: 90%;
+    text-align: center;
+  }
+  .main-content-center__title {
+    width: 90%;
+    font-size: 1.9em;
+  }
+
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto-fit;
+    grid-template-rows: 30% 1fr;
+    grid-template-areas:
+      "main-header"
+      "main-center";
+  }
+  .main-content-header {
+    grid-area: main-header;
+    display: flex;
+    align-items: flex-end;
+    background: url("../images/bg-header-mobile.png");
+  }
 }
