@@ -114,7 +114,7 @@ h2 {
   box-shadow: 0px 10px 30px 0.1px hsla(233, 51%, 38%, 0.269);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .main-content-center__description {
     width: 90%;
     text-align: center;

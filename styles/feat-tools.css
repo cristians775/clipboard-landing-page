@@ -56,7 +56,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .clipboard-feat-access__description {
     width: 90%;
   }
