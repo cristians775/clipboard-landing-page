@@ -90,6 +90,9 @@ h2 {
   background-color: var(--strong-cyan);
   color: white;
 }
+.primary:active{
+  background-color:hsla(171, 66%, 44%, 0.66);
+}
 .btn::after {
   content: "";
   background-color: transparent;
@@ -109,6 +112,9 @@ h2 {
 .secondary {
   background-color: var(--light-blue);
   color: white;
+}
+.secondary:active{
+  background-color:hsla(233, 100%, 69%, 0.66)
 }
 .secondary::after {
   border-bottom: 3px solid hsl(233, 51%, 38%);

@@ -25,14 +25,15 @@
   margin: 5%;
 }
 .footer-links__content {
-  width: 40%;
-  height: 3em;
+  width: 45%;
+  height: 6em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 .footer-links__content > a {
   display: block;
+  padding:10px;
 }
 .footer__social-networks {
   width: 20%;
