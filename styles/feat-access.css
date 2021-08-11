@@ -1,12 +1,13 @@
 .clipboard-feat-access-container {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 65vh;
   display: grid;
   position: relative;
   grid-template-columns: auto-fit auto-fit;
   grid-template-rows: 20% auto-fit;
   grid-template-areas:
     "feat-access-top feat-access-top"
+  
     "hero hero";
 }
 
@@ -27,13 +28,13 @@
 }
 .clipboard-feat-access__hero {
   grid-area: hero;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+ 
 }
 
-.clipboard-feat-access__hero > img {
-  max-width: 100%;
-  max-height: auto;
+.clipboard-feat-access__hero > img {  
+  max-width:100%;
+  height: auto;
 }
 
 @media screen and (max-width: 375px) {
