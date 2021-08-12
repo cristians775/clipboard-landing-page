@@ -52,6 +52,7 @@ h2 {
   box-shadow: 0px -20px 20px 10px rgb(255, 255, 255) inset;
 }
 
+
 .main-content-center {
   grid-area: main-center;
   display: flex;
